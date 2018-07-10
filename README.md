@@ -4,4 +4,7 @@
 # Lighter
 Laravel and Vue.js base SPA framework.
 
+# Releases
+[Releases](https://github.com/lighter-framework/lighter/releases)
+
 # In development...
