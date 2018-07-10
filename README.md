@@ -7,4 +7,19 @@ Laravel and Vue.js base SPA framework.
 # Releases
 [Releases](https://github.com/lighter-framework/lighter/releases)
 
+# Get started
+Download from [Releases](https://github.com/lighter-framework/lighter/releases).
+Thawing zip.
+Open the folder on the terminal or command prompt.
+If you use yarn
+```
+yarn
+yarn run lighter:setup
+```
+If you use npm
+```
+npm install
+npm run lighter:setup
+```
+
 # In development...
