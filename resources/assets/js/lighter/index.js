@@ -8,6 +8,9 @@ Lighter.alac = alac
 Lighter.debug = debug
 Lighter.Spark = spark
 
+window.LIGHTER_VERSION_STRING = '0.0.0'
+window.LIGHTER_VERSION_NUMBER = 0
+
 export default Lighter
 
 export const Alac = alac
