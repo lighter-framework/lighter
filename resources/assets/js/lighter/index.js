@@ -8,8 +8,8 @@ Lighter.alac = alac
 Lighter.debug = debug
 Lighter.Spark = spark
 
-window.LIGHTER_VERSION_STRING = '0.0.0'
-window.LIGHTER_VERSION_NUMBER = 0
+window.LIGHTER_VERSION_STRING = '0.0.1'
+window.LIGHTER_VERSION_NUMBER = 1
 
 export default Lighter
 
