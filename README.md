@@ -13,6 +13,10 @@ Thawing zip.
 Open the folder on the terminal or command prompt.
 
 ## Install packages
+```
+composer install
+```
+
 If you use yarn
 ```
 yarn
