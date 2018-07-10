@@ -21,5 +21,17 @@ If you use npm
 npm install
 npm run lighter:setup
 ```
+and
+```
+php artisan serve
+```
+and
+```
+yarn run hot
+```
+or
+```
+npm run hot
+```
 
 # In development...
