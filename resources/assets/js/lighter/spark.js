@@ -17,6 +17,7 @@ class Spark
     {
         this.src = src
         this.actions = {}
+        Spark.sparks[src.charAt(0).toUpperCase() + src.slice(1)] = this
     }
 
     getModel(data)
@@ -31,6 +32,9 @@ class Spark
                     reqData[key] = model[key]
                 })
             return spark.request('update', reqData)
+        })
+        trySet(model, 'delete', () => {
+            return spark.request('delete', {id: model.id})
         })
         trySet(model, 'spark', this)
 
@@ -68,7 +72,14 @@ class Spark
     {
         return await this.getModelWithRequest('get', {id})
     }
+
+    async all()
+    {
+
+    }
 }
+
+Spark.sparks = {}
 
 export default Spark
 

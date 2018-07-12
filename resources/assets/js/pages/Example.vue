@@ -52,7 +52,6 @@
                 if(vm.messageCount >= 16 && vm.messageCount <= 21) char = `<span style="color: #66B26B;">${char}</span>`
                 if(vm.messageCount >= 29 && vm.messageCount <= 31) char = `<span style="color: #2196F3;">${char}</span>`
                 vm.message += char
-                console.log(char)
                 vm.messageCount++
                 if(vm.messageCount >= vm.fullMessage.length) clearInterval(interval)
             }, 50)
