@@ -15,7 +15,11 @@ const Debug = {
     {
         console.error('Lighter-error: ' + message)
         this.__log('Lighter-error:', message, '#f44336', '#c62828')
-        return false
+        return {
+            with(value){
+                return value
+            }
+        }
     },
     warning(message)
     {

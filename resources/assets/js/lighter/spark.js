@@ -75,7 +75,38 @@ class Spark
 
     async all()
     {
+        var spark = this
+        var models = []
+        var records = await this.request('all').then(alac.resultData)
 
+        records.forEach(record => {
+            models.push(spark.getModel(record))
+        })
+
+        return models
+    }
+
+    async create(data, path = 'create')
+    {
+        var sendData = {}
+
+        if (typeof data != 'object') return Debug.error('Data argument must been object.').with(false)
+
+        Object
+            .keys(data)
+            .forEach(key => {
+                Debug.log(key, data)
+                if(typeof data[key] == 'function')
+                {
+                    sendData[key] = data[key]()
+                }
+                else
+                {
+                    sendData[key] = data[key]
+                }
+            })
+
+        return await this.request(path, sendData)
     }
 }
 
