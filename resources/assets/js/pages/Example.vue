@@ -24,8 +24,7 @@
                 <h2># Links</h2>
                 <p class="white">These links open new tab.</p>
                 <a href="" target="_blank">Documents</a>
-                <a href="" target="_blank"></a>
-                <a href="" target="_blank">Github</a>
+                <a href="https://github.com/lighter-framework/lighter" target="_blank">Github</a>
                 <a href="https://discord.gg/F7wnfsJ" target="_blank">Discord</a>
             </div>
         </div>
