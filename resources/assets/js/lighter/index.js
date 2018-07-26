@@ -8,8 +8,8 @@ Lighter.alac = alac
 Lighter.debug = debug
 Lighter.Spark = spark
 
-window.LIGHTER_VERSION_STRING = '0.0.7'
-window.LIGHTER_VERSION_NUMBER = 7
+window.LIGHTER_VERSION_STRING = '0.0.8'
+window.LIGHTER_VERSION_NUMBER = 8
 
 if (Laravel.isLocal)
 {

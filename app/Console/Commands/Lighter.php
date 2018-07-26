@@ -57,7 +57,7 @@ class Lighter extends Command
                         $filename = basename($newComponent);
                         $componentName = strtolower(preg_replace('/[a-z]+(?=[A-Z])|[A-Z]+(?=[A-Z][a-z])/', '\0-', basename($newComponent, '.vue')));
 
-                        $jsComponent = "Vue.component('$componentName', './components/$filename')";
+                        $jsComponent = "Vue.component('$componentName', require('./components/$filename'))";
 
                         $appJs = $this->getAppJsAsCollection();
                         $appJs->splice($appJs->search('/*Components here*/') + 1, 0, [$jsComponent]);
@@ -73,7 +73,7 @@ class Lighter extends Command
                         $filename = basename($component);
                         $componentName = strtolower(preg_replace('/[a-z]+(?=[A-Z])|[A-Z]+(?=[A-Z][a-z])/', '\0-', basename($component, '.vue')));
 
-                        $jsComponent = "Vue.component('$componentName', './components/$filename')";
+                        $jsComponent = "Vue.component('$componentName', require('./components/$filename'))";
 
                         $appJs = $this->getAppJsAsCollection();
                         if(!$appJs->search($jsComponent)) break;
